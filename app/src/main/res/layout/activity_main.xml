@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/main_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="20dp">
+        <Button
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fetch Data and Insert Data"
+            android:id="@+id/but1"
+            android:layout_weight="1"
+            android:textColor="@color/test_bg"
+            android:background="@drawable/button_basic"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="visible"
+        android:layout_below="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/recyclerView"
+        android:layout_above="@+id/check"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/check"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/but3"
+            android:text="Fetch data from SQLite Database"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@color/BUTTON2_BG"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
