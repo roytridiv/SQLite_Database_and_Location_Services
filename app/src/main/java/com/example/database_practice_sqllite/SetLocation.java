@@ -64,6 +64,7 @@ public class SetLocation extends AppCompatActivity implements OnMapReadyCallback
 
     Button b;
     TextView tx, tx2;
+
     private boolean l = true;
 
     private static final String t = "Set Location Activity";
